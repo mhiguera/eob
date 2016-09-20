@@ -1,0 +1,23 @@
+{
+  "name": "eob",
+  "version": "1.0.0",
+  "description": "Ready-to-pipe stream to glue and slice a chunked stream. Includes handshaking!",
+  "author": "Manuel de la Higuera <mhiguera@gmail.com>",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/mhiguera/eob.git"
+  },
+  "keywords": [
+    "tcp",
+    "stream",
+    "chunk",
+    "pipe",
+    "handshake"
+  ],
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/mhiguera/eob/issues"
+  },
+  "homepage": "https://github.com/mhiguera/eob#readme"
+}
