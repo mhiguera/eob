@@ -1,6 +1,6 @@
 {
   "name": "eob",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Ready-to-pipe stream to glue and slice a chunked stream. Includes handshaking!",
   "author": "Manuel de la Higuera <mhiguera@gmail.com>",
   "main": "index.js",

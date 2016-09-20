@@ -41,7 +41,7 @@ module.exports = function createStream(eob, handshake) {
       needsHandshake = !!handshake;
   
   eob = eob || new Buffer('\n');
-  if (!Buffer.isBuffer(handshake)) handshake = Buffer.from(handshake);
+  if (handshake && !Buffer.isBuffer(handshake)) handshake = Buffer.from(handshake);
   if (!Buffer.isBuffer(eob)) eob = Buffer.from(eob);
 
   stream.readable = true;
