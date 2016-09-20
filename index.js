@@ -60,7 +60,8 @@ module.exports = function createStream(eob, handshake) {
     cleanCut = sliceRight(buff, eob);
     splitted = splitBuffer(cleanCut || buff, eob)
     splitted.forEach(this.emit.bind(this, 'data'));
-    buff = cleanCut || new Buffer(0);
+    buff = (cleanCut)? new Buffer(0) : splitted.pop();
   }
   return stream;
 }
+
